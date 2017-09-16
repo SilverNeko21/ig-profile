@@ -1,21 +1,29 @@
+@keyframes username {
+	0% {color: black;}
+	25% {color:orange;}
+	50% {color:yellow;}
+	75% {color:teal;}
+	85% {color:tomato;}
+	100% {color:black;}
+}
+
 body{
-	background-color: black;
-	text-align: center;
+  background: grey;
+  text-align: center;
 	padding: auto;
-	margin: auto;
-	margin-left: 20%;
+	margin: 100px;
 	height: 600px;
 	widows: 1000px;
 	font-size: 150%;
 	font-family: Times;
-	
 }
 
 #container{
 	width:1080px;
+	height:auto;
 	text-align: center;
 	background-color: white;
-	border:3px solid #F28E0F;
+	border:3px solid #EEB210;
 }
 
 #top-bar{
@@ -24,7 +32,13 @@ body{
 }
 
 #username{
-	text-align: center;
+	animation-name: username;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	text-align: left;
+	margin-left: 30px;
+	padding-top: 3%;
+	font-size: 150%;
 }
 
 #follower-count{
@@ -54,10 +68,17 @@ body{
 }
 
 .ig-image{
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
 	display: table-row-group, inline;
-	width: 300px;
-	height: 300px;
+	width: 325px;
+	height: 325px;
 	
+}
+
+.ig-image:hover {
+	width:340px;
+	height:340px;
 }
 
 #bottom-bar{
