@@ -1,7 +1,11 @@
+
 @keyframes username {
 	0% {color: black;}
+	15% {color:grey;}
 	25% {color:orange;}
-	50% {color:yellow;}
+	35% {color:red;}
+	50% {color:green;}
+	65% {color:violet;}
 	75% {color:teal;}
 	85% {color:tomato;}
 	100% {color:black;}
@@ -11,9 +15,9 @@ body{
   background: grey;
   text-align: center;
 	padding: auto;
-	margin: 100px;
-	height: 600px;
-	widows: 1000px;
+	margin: auto;
+	width:1080px;
+	height: 60%;
 	font-size: 150%;
 	font-family: Times;
 }
@@ -46,6 +50,18 @@ body{
 	background-image: url(images/Follower-Count.png);
 	margin-bottom: 50px;
 
+}
+
+#following{
+	margin-left: 72%;
+	margin-top:-7%;
+	font-size: 150%;
+}
+
+#followers{
+	margin-left: 30%;
+	margin-top:-7%;
+	font-size: 150%;
 }
 
 #posts{
